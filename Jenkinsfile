@@ -27,9 +27,9 @@ pipeline {
         stage('Sonar') {
             steps {
                 echo 'Sonar Scanner'
-               def scannerHome = tool 'SonarQube Scanner'
-			    withSonarQubeEnv('SonarQube Server') {
-			    	bat '$(scannerHome)/bin/sonar-scanner-3.0.3.778-windows'
+               //def scannerHome = tool 'SonarQube Scanner'
+			    //withSonarQubeEnv('SonarQube Server') {
+			    	//bat '$(scannerHome)/bin/sonar-scanner-3.0.3.778-windows'
 			    }
             }
         }
