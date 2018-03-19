@@ -30,7 +30,7 @@ pipeline {
                //def scannerHome = tool 'SonarQube Scanner'
 			    //withSonarQubeEnv('SonarQube Server') {
 			    	//bat '$(scannerHome)/bin/sonar-scanner-3.0.3.778-windows'
-			    }
+			   // }
             }
         }
         stage('Package') {
