@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checkout'
-		export JAVA_HOME="C:\Program Files\Java\jdk1.8.0_144\jre" 
+		set JAVA_HOME='C:\Program Files\Java\jdk1.8.0_144\jre'
             }
         }
         stage('Build') {
