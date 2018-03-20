@@ -8,6 +8,10 @@ pipeline {
         }
         stage('Build') {
             steps {
+		echo 'JAVA_HOME SETUP JAVA_HOME=C:\\Program Files\\Java\\jdk1.8.0_144\\jre'
+		bat 'JAVA_HOME=C:\\Program Files\\Java\\jdk1.8.0_144\\jre'
+
+'
                 echo 'Clean Build'
                 bat 'mvnw clean compile'
             }
