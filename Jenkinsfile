@@ -10,10 +10,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Clean Build'
-		withEnv(["JAVA_HOME=${ tool 'jdk1.8.0_144' }", "PATH+MAVEN=${tool 'maven-3.5.0'}/bin:${env.JAVA_HOME}/bin"]) {
 
                 bat 'mvnw clean compile'
-		}
+		
             }
         }
         stage('Test') {
